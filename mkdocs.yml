@@ -6,13 +6,21 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-  palette:
-    accent: light blue
   language: zh
   features:
     - navigation.instant
     - content.code.copy
     - toc.integrate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: light blue
+    - scheme: slate
+      primary: indigo
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到日间模式
 
 nav:
   - 首页: index.md
