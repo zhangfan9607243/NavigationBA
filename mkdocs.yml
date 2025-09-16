@@ -28,15 +28,35 @@ theme:
 nav:
   - 首页: index.md
   - Module 1 - Python基础: 
-    - Topic 1: Topic1.md
-    - Topic 2: Topic2.md
-    - Topic 3: Topic3.md
-    - Topic 4: Topic4.md
-  - Module 2 - Python面向对象: chapter2.md
-  - Module 3 - Python数据分析: chapter3.md
-  - Module 4 - R基础: chapter4.md
-  - Module 5 - SQL基础: chapter4.md
-  - Module 6 - Tableau基础: chapter4.md
+    - Topic 1: Module1_PythonBasics/Topic1.md
+    - Topic 2: Module1_PythonBasics/Topic2.md
+    - Topic 3: Module1_PythonBasics/Topic3.md
+    - Topic 4: Module1_PythonBasics/Topic4.md
+  - Module 2 - Python面向对象:
+    - Topic 1: Module2_PythonOOP/Topic1.md
+    - Topic 2: Module2_PythonOOP/Topic2.md
+    - Topic 3: Module2_PythonOOP/Topic3.md
+    - Topic 4: Module2_PythonOOP/Topic4.md
+  - Module 3 - Python数据分析:
+    - Topic 1: Module3_PythonDataAnalysis/Topic1.md
+    - Topic 2: Module3_PythonDataAnalysis/Topic2.md
+    - Topic 3: Module3_PythonDataAnalysis/Topic3.md
+    - Topic 4: Module3_PythonDataAnalysis/Topic4.md
+  - Module 4 - R基础:
+    - Topic 1: Module4_RBasics/Topic1.md
+    - Topic 2: Module4_RBasics/Topic2.md
+    - Topic 3: Module4_RBasics/Topic3.md
+    - Topic 4: Module4_RBasics/Topic4.md
+  - Module 5 - SQL基础:
+    - Topic 1: Module5_SQLBasics/Topic1.md
+    - Topic 2: Module5_SQLBasics/Topic2.md
+    - Topic 3: Module5_SQLBasics/Topic3.md
+    - Topic 4: Module5_SQLBasics/Topic4.md
+  - Module 6 - Tableau基础: 
+    - Topic 1: Module6_TableauBasics/Topic1.md
+    - Topic 2: Module6_TableauBasics/Topic2.md
+    - Topic 3: Module6_TableauBasics/Topic3.md
+    - Topic 4: Module6_TableauBasics/Topic4.md
 
 markdown_extensions:
   - admonition
