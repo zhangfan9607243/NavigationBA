@@ -1,5 +1,5 @@
-site_name: Python Basics
-site_description: Python Basics
+site_name: 领航国际教育 - Business Analytics专业自学系列课程
+site_description: 领航国际教育 - Business Analytics专业自学系列课程
 site_url: https://zhangfan9607243.github.io/NavigationBA-PythonBasics/
 repo_url: https://github.com/zhangfan9607243/NavigationBA-PythonBasics
 edit_uri: edit/main/docs/
@@ -7,8 +7,9 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   language: zh
-  ffeatures:
-    - navigation.instant
+  features:
+    - navigation.tabs        # 顶部导航标签
+    - navigation.sections    # 子导航分组
     - navigation.top
     - navigation.tracking
     - content.code.copy
@@ -25,11 +26,17 @@ theme:
         name: 切换到日间模式
 
 nav:
-  - Introduction: index.md
-  - Chapter 1: chapter1.md
-  - Chapter 2: chapter2.md
-  - Chapter 3: chapter3.md
-  - Chapter 4: chapter4.md
+  - 首页: index.md
+  - Module 1 - Python基础: 
+    - Topic 1: Topic1.md
+    - Topic 2: Topic2.md
+    - Topic 3: Topic3.md
+    - Topic 4: Topic4.md
+  - Module 2 - Python面向对象: chapter2.md
+  - Module 3 - Python数据分析: chapter3.md
+  - Module 4 - R基础: chapter4.md
+  - Module 5 - SQL基础: chapter4.md
+  - Module 6 - Tableau基础: chapter4.md
 
 markdown_extensions:
   - admonition
