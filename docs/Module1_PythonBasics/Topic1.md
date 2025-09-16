@@ -39,7 +39,8 @@ Python解释器就像一本厚重的字典，可以让计算机逐条理解Pytho
 
 PyCharm是目前应用最广泛的Python IDE之一。虽然许多人在学习后期可能会转向更为通用和强大的开发工具，如VSCode，但VSCode面向所有编程语言，功能丰富的同时也增加了上手难度。相比之下，PyCharm专为Python开发而设计，界面简洁、功能集中，更适合初学者快速入门。掌握PyCharm后，再过渡到VSCode等更高级的IDE会更加顺利。
 
-PyCharm官方下载地址：https://www.jetbrains.com/pycharm/
+PyCharm官方下载地址：https://www.jetbrains.com/pycharm
+
 - PyCharm分为社区版（免费）和专业版（收费），学习和日常使用安装社区版就足够。专业版虽然收费，但是在校学生只要提供学校邮箱或上传在读证明的照片，就可以免费使用。
 - 安装完成后，首次启动需要设置：
   - 配置Python解释器路径；
