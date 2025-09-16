@@ -7,28 +7,34 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   language: zh
-  features:
+  ffeatures:
     - navigation.instant
+    - navigation.top
+    - navigation.tracking
     - content.code.copy
-    - toc.integrate
+    - toc.follow
   palette:
     - scheme: default
-      primary: light blue   # 主色（导航栏背景）
-      accent: light blue    # 强调色（按钮、链接高亮）
+      primary: blue   # 主色（导航栏背景）
+      accent: blue    # 强调色（按钮、链接高亮）
     - scheme: slate
-      primary: light blue
-      accent: light blue
+      primary: blue
+      accent: blue
       toggle:
         icon: material/weather-sunny
         name: 切换到日间模式
 
-
 nav:
-  - 首页: index.md
+  - Introduction: index.md
+  - Chapter 1: chapter1.md
+  - Chapter 2: chapter2.md
+  - Chapter 3: chapter3.md
+  - Chapter 4: chapter4.md
 
 markdown_extensions:
   - admonition
   - toc:
       permalink: true
+      title: Table of Contents
   - pymdownx.highlight
   - pymdownx.superfences
