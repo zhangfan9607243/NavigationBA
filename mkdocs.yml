@@ -53,10 +53,10 @@ nav:
     - Topic 3: Module5_SQLBasics/Topic3.md
     - Topic 4: Module5_SQLBasics/Topic4.md
   - Module 6 - Tableau基础: 
-    - Topic 1: Module6_TableauBasics/Topic1.md
-    - Topic 2: Module6_TableauBasics/Topic2.md
-    - Topic 3: Module6_TableauBasics/Topic3.md
-    - Topic 4: Module6_TableauBasics/Topic4.md
+    - Topic 1: Module6_Tableau/Topic1.md
+    - Topic 2: Module6_Tableau/Topic2.md
+    - Topic 3: Module6_Tableau/Topic3.md
+    - Topic 4: Module6_Tableau/Topic4.md
 
 markdown_extensions:
   - admonition
