@@ -28,20 +28,20 @@ theme:
 nav:
   - 首页: index.md
   - Module 1 - Python基础: 
-    - Topic 1: Module1_PythonBasics/Topic1.md
-    - Topic 2: Module1_PythonBasics/Topic2.md
-    - Topic 3: Module1_PythonBasics/Topic3.md
-    - Topic 4: Module1_PythonBasics/Topic4.md
+    - Topic 1 - Python基本介绍: Module1_PythonBasics/Topic1.md
+    - Topic 2 - Python编程核心: Module1_PythonBasics/Topic2.md
+    - Topic 3 - Python中的基础数据类型: Module1_PythonBasics/Topic3.md
+    - Topic 4 - Python中的组合数据类型: Module1_PythonBasics/Topic4.md
   - Module 2 - Python面向对象:
     - Topic 1: Module2_PythonOOP/Topic1.md
     - Topic 2: Module2_PythonOOP/Topic2.md
     - Topic 3: Module2_PythonOOP/Topic3.md
     - Topic 4: Module2_PythonOOP/Topic4.md
   - Module 3 - Python数据分析:
-    - Topic 1: Module3_PythonDataAnalysis/Topic1.md
-    - Topic 2: Module3_PythonDataAnalysis/Topic2.md
-    - Topic 3: Module3_PythonDataAnalysis/Topic3.md
-    - Topic 4: Module3_PythonDataAnalysis/Topic4.md
+    - Topic 1 - Python数据分析基本介绍: Module3_PythonDataAnalysis/Topic1.md
+    - Topic 2 - Pandas基础: Module3_PythonDataAnalysis/Topic2.md
+    - Topic 3 - Numpy基础: Module3_PythonDataAnalysis/Topic3.md
+    - Topic 4 - Python数据可视化: Module3_PythonDataAnalysis/Topic4.md
   - Module 4 - R基础:
     - Topic 1: Module4_RBasics/Topic1.md
     - Topic 2: Module4_RBasics/Topic2.md
