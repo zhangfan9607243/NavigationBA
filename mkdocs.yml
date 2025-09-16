@@ -62,6 +62,6 @@ markdown_extensions:
   - admonition
   - toc:
       permalink: true
-      title: Table of Contents
+      title: 本章目录
   - pymdownx.highlight
   - pymdownx.superfences
