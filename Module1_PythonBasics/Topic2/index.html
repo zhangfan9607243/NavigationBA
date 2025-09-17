@@ -1690,8 +1690,8 @@
 <h3 id="11-python">1.1 单行 Python 程序<a class="headerlink" href="#11-python" title="Permanent link">&para;</a></h3>
 <p>首先我们来复习一下上一章的打印 <code>Hello World!</code> 的简单程序</p>
 <ul>
-<li>我们先在 PyCharm 中打开之前在桌面创建好的项目 <code>PythonBasics</code>，</li>
-<li>之后在 <code>PythonBasics</code> 总目录下新建一个文件夹，就叫做 <code>Topic02</code>，并在这个文件夹下创建名为 <code>t02_01_single_line.py</code> 的 Python 文件，</li>
+<li>我们先在 PyCharm 中打开之前在桌面创建好的项目 <code>PythonBasics</code></li>
+<li>之后在 <code>PythonBasics</code> 总目录下新建一个文件夹，就叫做 <code>Topic02</code>，并在这个文件夹下创建名为 <code>t02_01_single_line.py</code> 的 Python 文件</li>
 <li>之后在该文件中写入以下代码并运行：</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>
@@ -1752,7 +1752,7 @@ Hello Python!
 <p>定义之后，变量可以直接使用：</p>
 <ul>
 <li>我们可以使用 <code>print</code> 函数查看变量的值</li>
-<li>我们也可以使用 <code>type</code> 函数查看变量的类型，注意在 Python 中，直接使用 <code>type</code> 函数并不会在控制台输出内容，因此 <code>type</code> 函数必须嵌套在 <code>print</code> 函数中实现输出。</li>
+<li>我们也可以使用 <code>type</code> 函数查看变量的类型，注意在 Python 中，直接使用 <code>type</code> 函数并不会在控制台输出内容，因此 <code>type</code> 函数必须嵌套在 <code>print</code> 函数中实现输出</li>
 <li>接着，我们在 <code>t02_03_assignment_01.py</code> 文件中查看以下刚刚定义好的两个变量 <code>name</code> 和 <code>age</code> 的值和类型：</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;小明&quot;</span>
@@ -1935,7 +1935,7 @@ NameError: name &#39;age&#39; is not defined
 <h3 id="31">3.1 单行注释<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
 <p>单行注释以井号 <code>#</code> 开头，井号右边的内容就是注释，可以写在一行的开头，也可以跟在代码的后面。</p>
 <ul>
-<li>示例：</li>
+<li>示例：我们创建一个新的文件 <code>t02_05_comments.py</code>，并运行以下代码：</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="c1"># 以下代码展示了 print 函数的使用</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>  <span class="c1"># 输出 Hello World</span>
@@ -1953,8 +1953,8 @@ NameError: name &#39;age&#39; is not defined
 <h3 id="32">3.2 多行注释<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
 <p>多行注释适用于文字比较长，使用三个连续的双引号 <code>"""注释内容"""</code> 或三个连续的单引号 <code>'''注释内容'''</code>：</p>
 <ul>
-<li>
-<p>示例：
+<li>示例：我们接着在文件 <code>t02_05_comments.py</code> 中运行以下代码：</li>
+</ul>
 <div class="highlight"><pre><span></span><code><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">以下的代码会：</span>
 <span class="sd">1. 输出Hello World!</span>
@@ -1963,14 +1963,12 @@ NameError: name &#39;age&#39; is not defined
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello Python!&quot;</span><span class="p">)</span>
-</code></pre></div></p>
-</li>
-<li>
-<p>输出：
+</code></pre></div>
+<ul>
+<li>输出：
 <div class="highlight"><pre><span></span><code>Hello World!
 Hello Python!
-</code></pre></div></p>
-</li>
+</code></pre></div></li>
 </ul>
 <p>使用三个引号的多行注释，与使用井号定义的单行注释，在本质上是不同的：</p>
 <ul>
