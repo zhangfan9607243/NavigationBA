@@ -1,2 +1,8 @@
 # 忽略 MkDocs 构建目录
 site/
+
+# 忽略 .gitignore 自身
+.gitignore
+
+# 忽略部署脚本
+deploy.sh
