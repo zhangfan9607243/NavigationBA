@@ -1904,21 +1904,68 @@ NameError: name &#39;age&#39; is not defined
 </li>
 <li>不能使用 <strong>关键字</strong> 作为变量名：Python 3.10 版本后一共有35个关键字</li>
 </ol>
-<div align="center">
-
-
-|  |         |  **关键字**     |       |        |
-|----------|---------|-------|-------|--------|
-| False    | None    | True  | and   | as     |
-| assert   | async   | await | break | class  |
-| continue | def     | del   | elif  | else   |
-| except   | finally | for   | from  | global |
-| if       | import  | in    | is    | lambda |
-| nonlocal | not     | or    | pass  | raise  |
-| return   | try     | while | with  | yield  |
-
-</div>
-
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th><strong>关键字</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>False</td>
+<td>None</td>
+<td>True</td>
+<td>and</td>
+<td>as</td>
+</tr>
+<tr>
+<td>assert</td>
+<td>async</td>
+<td>await</td>
+<td>break</td>
+<td>class</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>def</td>
+<td>del</td>
+<td>elif</td>
+<td>else</td>
+</tr>
+<tr>
+<td>except</td>
+<td>finally</td>
+<td>for</td>
+<td>from</td>
+<td>global</td>
+</tr>
+<tr>
+<td>if</td>
+<td>import</td>
+<td>in</td>
+<td>is</td>
+<td>lambda</td>
+</tr>
+<tr>
+<td>nonlocal</td>
+<td>not</td>
+<td>or</td>
+<td>pass</td>
+<td>raise</td>
+</tr>
+<tr>
+<td>return</td>
+<td>try</td>
+<td>while</td>
+<td>with</td>
+<td>yield</td>
+</tr>
+</tbody>
+</table>
 <h4 id="2-">(2) 见名知义的准则 - 推荐遵守<a class="headerlink" href="#2-" title="Permanent link">&para;</a></h4>
 <p>这些是良好的编程习惯，能大幅提升代码的可读性和团队协作效率，但是本质来讲以下准则并不是 Python 语言强制的，违反了也并不会导致程序报错：</p>
 <ol>
@@ -2043,15 +2090,24 @@ Hello Python!
 <li>可以看到，<code>age</code> 变量虽然看起来是数字，但实际是字符串。</li>
 </ul>
 <p>因此，如果想要将用户输入的数字真正变成 Python 中的数字类型，我们就需要转换函数：</p>
-<div align="center">
-
-| 函数         | 说明              |
-| ----------  | ------------      | 
-| `int(x)`    | 将 `x` 转换为整数   |
-| `float(x)`  | 将 `x` 转换为浮点数（Python中的小数）|
-
-</div>
-
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>int(x)</code></td>
+<td>将 <code>x</code> 转换为整数</td>
+</tr>
+<tr>
+<td><code>float(x)</code></td>
+<td>将 <code>x</code> 转换为浮点数（Python中的小数）</td>
+</tr>
+</tbody>
+</table>
 <ul>
 <li>这次，我们将上面例子中的输入套入一个 <code>int()</code> 函数中，将它转换为 Python 中的整数类型：</li>
 </ul>
