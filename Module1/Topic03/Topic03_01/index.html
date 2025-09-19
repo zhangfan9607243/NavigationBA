@@ -1431,9 +1431,7 @@
 &lt;class &#39;float&#39;&gt;
 </code></pre></div>
 <p>整数与浮点数是可以相互转换的，使用的函数我们上一章已经接触过：</p>
-<ul>
-<li>首先，我们可以使用函数实现整数与浮点数之间的相互转化：</li>
-</ul>
+<p>首先，我们可以使用函数实现整数与浮点数之间的相互转化：</p>
 <table>
 <thead>
 <tr>
@@ -1452,10 +1450,11 @@
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre><span></span><code>- 整数转为浮点数是在整数后面加了一个 `.0`
-- 浮点数转为整数会直接截断小数部分（不是四舍五入）：
-- 示例：
-</code></pre></div>
+<ul>
+<li>整数转为浮点数是在整数后面加了一个 <code>.0</code></li>
+<li>浮点数转为整数会直接截断小数部分（不是四舍五入）：</li>
+<li>示例：</li>
+</ul>
 <div class="highlight"><pre><span></span><code><span class="n">m</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">n</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
@@ -1466,27 +1465,25 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>- 结果：
-</code></pre></div>
+<ul>
+<li>结果：</li>
+</ul>
 <div class="highlight"><pre><span></span><code>5.0
 &lt;class &#39;float&#39;&gt;
 3
 &lt;class &#39;int&#39;&gt;
 </code></pre></div>
-<ul>
-<li>
 <p>此外，整数与浮点数在进行运算时，结果会自动转为浮点数：</p>
 <ul>
 <li>示例：</li>
-</ul>
-</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="n">w</span> <span class="o">=</span> <span class="mi">3</span><span class="o">+</span><span class="mf">4.5</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">w</span><span class="p">))</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>- 结果：
-</code></pre></div>
+<ul>
+<li>结果：</li>
+</ul>
 <div class="highlight"><pre><span></span><code>7.5
 &lt;class &#39;float&#39;&gt;
 </code></pre></div>
