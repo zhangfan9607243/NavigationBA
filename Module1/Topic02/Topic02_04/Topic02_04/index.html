@@ -1147,43 +1147,32 @@
 
 <h1 id="topic-24-input">Topic 2.4 - 用户输入 - <code>input()</code> 函数<a class="headerlink" href="#topic-24-input" title="Permanent link">&para;</a></h1>
 <p>在很多程序中，除了输出信息给用户，还需要接收用户的输入，让程序能够与用户进行交互。</p>
-<p>在 Python 中，获取用户输入要使用内置函数 <strong><code>input()</code></strong>。  </p>
 <h2 id="1-input">1. <code>input()</code> 函数的基本使用<a class="headerlink" href="#1-input" title="Permanent link">&para;</a></h2>
-<p><code>input()</code> 函数的基本语法是：  </p>
+<p>在 Python 中，获取用户输入要使用内置函数 <strong><code>input()</code></strong>，基本语法是：  </p>
 <div class="highlight"><pre><span></span><code><span class="n">变量名</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;提示信息：&quot;</span><span class="p">)</span>
 </code></pre></div>
 <ul>
 <li>首先，<code>input()</code> 函数需要使用一个变量来接收</li>
 <li>其次，<code>input()</code> 函数中可以输入一段文字作为提示信息</li>
 <li>当 Python 解释器看到有 <code>input()</code> 函数的时候，就会在控制台等待用户输入，用户如果没有输入，程序会一直等待</li>
-<li>
-<p>用户可以输入一段文字在控制台，输入结束后，按回车结束，程序就会继续运行</p>
-</li>
-<li>
-<p>示例，我们新建一个 <code>t02_05_input.py</code> 文件，并运行以下代码，大家可以尝试输入任意文字，例如我输入了“张三”：</p>
-</li>
+<li>用户可以输入一段文字在控制台，输入结束后，按回车结束，程序就会继续运行</li>
 </ul>
+<p>我们尝试运行以下代码，大家可以尝试输入任意文字，例如我输入了“张三”：</p>
 <div class="highlight"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;请输入你的名字：&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
 </code></pre></div>
-<ul>
-<li>输出：</li>
-</ul>
 <div class="highlight"><pre><span></span><code>请输入名字：张三
 张三
 </code></pre></div>
 <h2 id="2-input">2. <code>input()</code> 返回值的类型<a class="headerlink" href="#2-input" title="Permanent link">&para;</a></h2>
-<p>无论用户输入的是数字还是文字，<code>input()</code> 的返回值都是<strong>字符串</strong>类型。</p>
+<p>无论用户输入的是数字还是文字，<code>input()</code> 的返回值都是<strong>字符串</strong>类型：</p>
 <ul>
-<li>示例，假设我们在以下程序中输入“18”：</li>
+<li>比方说以下这个例子，我们在以下程序中输入“18”：</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;请输入你的年龄：&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>
 </code></pre></div>
-<ul>
-<li>输出：</li>
-</ul>
 <div class="highlight"><pre><span></span><code>请输入你的年龄：18
 18
 &lt;class &#39;str&#39;&gt;
@@ -1191,7 +1180,7 @@
 <ul>
 <li>可以看到，<code>age</code> 变量虽然看起来是数字，但实际是字符串。</li>
 </ul>
-<p>因此，如果想要将用户输入的数字真正变成 Python 中的数字类型，我们就需要转换函数：</p>
+<p>因此，如果想要将用户输入的数字真正变成 Python 中的数字类型，我们就需要<strong>转换函数</strong>：</p>
 <table>
 <thead>
 <tr>
@@ -1217,9 +1206,6 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">age_new</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">age_new</span><span class="p">))</span>
 </code></pre></div>
-<ul>
-<li>输出：</li>
-</ul>
 <div class="highlight"><pre><span></span><code>请输入你的年龄：18
 18
 &lt;class &#39;int&#39;&gt;
@@ -1231,15 +1217,22 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">height</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">height</span><span class="p">))</span>
 </code></pre></div>
-<ul>
-<li>输出：</li>
-</ul>
 <div class="highlight"><pre><span></span><code>请输入你的身高：178.5
 178.5
 &lt;class &#39;float&#39;&gt;
 </code></pre></div>
+<p>这里我们注意额外两点：</p>
 <ul>
-<li>这里我们要注意，<code>int()</code> 函数与 <code>float()</code> 函数中，只能输入“看上去像是数字的文字”，如果输入非数字，就会报错，例如 <code>int("abc")</code> 就会报错。</li>
+<li>
+<ol>
+<li><code>int()</code> 函数与 <code>float()</code> 函数中，只能输入“看上去像是数字的文字”，如果输入非数字，就会报错，例如 <code>int("abc")</code> 就会报错</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>如果用户在控制台什么也不输入就按下回车，那么 <code>input()</code> 函数接收到的是一个<strong>空字符串</strong></li>
+</ol>
+</li>
 </ul>
 
 
