@@ -973,7 +973,7 @@
           <li class="md-nav__item">
   <a href="#2_1" class="md-nav__link">
     <span class="md-ellipsis">
-      (2) 随机生成的点能都落入圆内
+      (2) 随机生成的点是否落入圆内
     </span>
   </a>
   
@@ -1217,7 +1217,7 @@
           <li class="md-nav__item">
   <a href="#2_1" class="md-nav__link">
     <span class="md-ellipsis">
-      (2) 随机生成的点能都落入圆内
+      (2) 随机生成的点是否落入圆内
     </span>
   </a>
   
@@ -1264,9 +1264,9 @@ False
 &lt;class &#39;bool&#39;&gt;
 &lt;class &#39;bool&#39;&gt;
 </code></pre></div>
-<p>布尔型和数字类型之间是有对应关系的：<code>True</code> 的数值就是1，<code>False</code> 的数值就是 0</p>
+<p>布尔型和数字类型之间是有对应关系的：<code>True</code> 的数值就是 1，<code>False</code> 的数值就是 0</p>
 <ul>
-<li>布尔型是支持基本运算的，包括加减乘除和其他运算函数</li>
+<li>因此，布尔型是支持基本运算的，包括加减乘除和其他运算函数</li>
 <li>同时，我们也可以使用 <code>int()</code> 函数将布尔型转为整数，或使用 <code>float()</code> 函数将布尔型转为浮点数</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="kc">True</span><span class="p">))</span>
@@ -1287,7 +1287,7 @@ False
 </code></pre></div>
 <p>同样的道理，数字类型也可以转为布尔型，使用的函数是 <code>bool()</code>：</p>
 <ul>
-<li>只有0与0.0对应的布尔型为 <code>False</code></li>
+<li>只有 0 与 0.0 对应的布尔型为 <code>False</code></li>
 <li>其他数字对应的布尔型都是 <code>True</code></li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
@@ -1484,13 +1484,13 @@ False
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>小明能否获得Switch： False
 </code></pre></div>
-<h3 id="2_1">(2) 随机生成的点能都落入圆内<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<h3 id="2_1">(2) 随机生成的点是否落入圆内<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p>要求：</p>
 <ul>
 <li>在横纵坐标都为 [-1, 1] 的范围内随机生成一个点，判断这个点是否在单位圆内</li>
-<li>判断公式为 <span class="arithmatex">\(x^2 + y^2 &lt;= 1\)</span></li>
+<li>判断公式为：<span class="arithmatex">\(x^2 + y^2 &lt;= 1\)</span></li>
 </ul>
 </li>
 <li>

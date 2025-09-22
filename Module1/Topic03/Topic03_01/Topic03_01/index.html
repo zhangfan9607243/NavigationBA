@@ -1337,7 +1337,6 @@
 <ul>
 <li>整数 (<code>int</code>) 在定义的时候不加小数点</li>
 <li>浮点数 (<code>float</code>) 在定义的时候要加上小数点</li>
-<li>示例：我们在总目录 <code>PythonBasics</code> 下面新建一个文件夹 <code>Topic03</code>，并且新建一个 Python 文件 <code>t03_01_int_float.py</code>，并运行以下代码：</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -1420,10 +1419,7 @@
 <li>遇到这样的结果，大家不必惊慌，要知道这是计算机运算的正常结果</li>
 </ul>
 <h2 id="2">2. 算数运算符<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
-<p>整数与浮点数在进行基本的运算时，可以采用 Python 中的算数运算符。</p>
-<ul>
-<li>这些算数运算符大部分都是和数学概念一致的，理解起来不难：</li>
-</ul>
+<p>整数与浮点数在进行基本的运算时，可以采用 Python 中的算数运算符:</p>
 <table>
 <thead>
 <tr>
@@ -1490,9 +1486,6 @@
 </tr>
 </tbody>
 </table>
-<ul>
-<li>示例：我们新建一个文件 <code>t03_02_int_float_calculation.py</code>，并运行以下代码：</li>
-</ul>
 <div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">7</span> 
 <span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
 
@@ -1549,7 +1542,7 @@
 </ul>
 </li>
 <li>
-<p>这当中有一个特殊情况：</p>
+<p>这里有一个特殊情况：</p>
 <ul>
 <li>多个幂运算在一起时，Python 会按照从右往左的顺序运算</li>
 <li>例如：<code>2 ** 3 ** 2</code> 等价于 <code>2 ** (3 ** 2) = 2 ** 9 = 512</code></li>
@@ -1618,9 +1611,6 @@
 </tr>
 </tbody>
 </table>
-<ul>
-<li>以上例子，我们新建一个文件 <code>t03_03_int_float_functions.py</code> 尝试一下：</li>
-</ul>
 <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="mf">3.14159</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
@@ -1637,11 +1627,7 @@
 1
 6
 </code></pre></div>
-<p>这当中有一个要注意的点：<code>round()</code> 函数：</p>
-<ul>
-<li>Python 的 <code>round()</code> 函数并不是传统意义上的“四舍五入”，而是采用 “四舍六入，五看前一位，前一位奇进偶不进” 的规则，也叫银行家舍入</li>
-<li>例子：</li>
-</ul>
+<p>这里有一个要注意的点：Python 的 <code>round()</code> 函数并不是传统意义上的“四舍五入”，而是采用 “四舍六入，五看前一位，前一位奇进偶不进” 的规则，也叫银行家舍入：</p>
 <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="mf">2.5</span><span class="p">))</span>   <span class="c1"># 2  （2是偶数，不进位）</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="mf">3.5</span><span class="p">))</span>   <span class="c1"># 4  （3是奇数，进位变4）</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="mf">1.25</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>  <span class="c1"># 1.2 （2是偶数，不进位）</span>
@@ -1653,13 +1639,17 @@
 1.4
 </code></pre></div>
 <h3 id="2-math">(2) <code>math</code> 模块中的运算<a class="headerlink" href="#2-math" title="Permanent link">&para;</a></h3>
-<p>Python 并不会把所有的功能都放在自己的内置环境中，有些功能是需要调用模块来实现的
-- 我们可以把 Python 内置环境比作新买来的手机，里面只有打电话、发短信、拍照等基本功能
-- 那么模块就相当于是下载下来的 APP，可以帮助实现许多拓展功能</p>
-<p>Python中调用模块需要使用 <code>import</code> 关键字来实现
-- 用法是 <code>import 模块名</code>，Python 官方推荐将所有模块调用的代码全都写在 Python 文件的开头
-- 模块调用后通过 <code>模块名.函数名()</code> 或 <code>模块名.对象名</code> 来使用模块中的功能
-- 这里我们用 <code>math</code> 模块来举例，我们在新建的 <code>t03_04_math_module.py</code> 里运行以下代码：</p>
+<p>Python 并不会把所有的功能都放在自己的内置环境中，有些功能是需要调用模块来实现的：</p>
+<ul>
+<li>我们可以把 Python 内置环境比作新买来的手机，里面只有打电话、发短信、拍照等基本功能</li>
+<li>那么模块就相当于是下载下来的 APP，可以帮助实现许多拓展功能</li>
+</ul>
+<p>Python中调用模块需要使用 <code>import</code> 关键字来实现：</p>
+<ul>
+<li>用法是 <code>import 模块名</code>，Python 官方推荐将所有模块调用的代码全都写在 Python 文件的开头</li>
+<li>模块调用后通过 <code>模块名.函数名()</code> 或 <code>模块名.对象名</code> 来使用模块中的功能</li>
+<li>这里我们用 <code>math</code> 模块来举例，我们在新建的 <code>t03_04_math_module.py</code> 里运行以下代码：</li>
+</ul>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">16</span><span class="p">))</span>
@@ -1776,9 +1766,6 @@
 </tr>
 </tbody>
 </table>
-<ul>
-<li>例如：我们新建一个 <code>t03_05_random_module.py</code> 文件，并在 0 - 100 区间内随机生成一个浮点数：</li>
-</ul>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
