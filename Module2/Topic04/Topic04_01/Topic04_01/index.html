@@ -1131,6 +1131,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      (3) 查看字符对应的编码值
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1158,6 +1167,29 @@
   
   <span class="md-ellipsis">
     ✅ Topic 4.2 - 字符串的索引与切片
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Topic04_03/Topic04_03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ✅ Topic 4.3 - 字符串的常见操作
     
   </span>
   
@@ -1300,6 +1332,15 @@
   <a href="#2-unicode" class="md-nav__link">
     <span class="md-ellipsis">
       (2) Unicode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      (3) 查看字符对应的编码值
     </span>
   </a>
   
@@ -1568,6 +1609,51 @@ World
 <li><strong>大家之后编程处理文字时如果出现乱码，很可能是编码方式没有设置为 UTF-8</strong></li>
 </ul>
 <p>UTF-8 使用 1-4 个字节来表示一个字符，通常越复杂越不常用的字符，所需的字符数就越多</p>
+<h3 id="3_1">(3) 查看字符对应的编码值<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<p>Python 中，我们可以查看单个字符的对应的编码值，使用的函数是 <code>ord()</code>：</p>
+<ul>
+<li>如果字符在 ASCII 码中，则返回其对应的 ASCII 码值</li>
+<li>如果字符不在 ASCII 码中，则返回其对应的 Unicode 码值</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">))</span>  <span class="c1"># ASCII</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s2">&quot;w&quot;</span><span class="p">))</span>  <span class="c1"># ASCII</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">))</span>  <span class="c1"># ASCII</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s2">&quot;!&quot;</span><span class="p">))</span>  <span class="c1"># ASCII</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">))</span> <span class="c1"># ASCII</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s2">&quot;财&quot;</span><span class="p">))</span>  <span class="c1"># Unicode</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s2">&quot;😊&quot;</span><span class="p">))</span> <span class="c1"># Unicode</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>65
+119
+49
+33
+10
+36130
+128522
+</code></pre></div>
+<p>注意，<code>ord()</code> 函数只支持转换单个字符，不支持转换整个字符串，其实整个字符串对应的编码值，就是把单个字符的编码值串起来即可</p>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s2">&quot;abc&quot;</span><span class="p">))</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>TypeError: ord() expected a character, but string of length 3 found
+</code></pre></div>
+<p>如果想把编码转回对应的字符，可以使用 <code>chr()</code> 函数</p>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">65</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">119</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">49</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">33</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">36130</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mi">128522</span><span class="p">))</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>A
+w
+1
+!
+
+
+财
+😊
+</code></pre></div>
 
 
 
